@@ -3,76 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pivotist LLC | AI Executive Systems</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <title>Real Changework | Practical Strategy Execution</title>
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .bg-gradient-ai { background: radial-gradient(circle at top right, #1e293b, #0f172a, #020617); }
-        .text-neon-blue { color: #38bdf8; }
-        .border-neon { border-color: rgba(56, 189, 248, 0.3); }
-        .glass-card { background: rgba(30, 41, 59, 0.5); backdrop-filter: blur(10px); }
+        :root {
+            --navy: #0a192f;
+            --charcoal: #333333;
+            --accent: #0077b6;
+            --white: #ffffff;
+            --light-gray: #f4f4f4;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--charcoal); margin: 0; padding: 0; }
+        header { background: var(--navy); color: var(--white); padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 1.5rem; font-weight: bold; letter-spacing: 1px; }
+        nav a { color: var(--white); text-decoration: none; margin-left: 20px; font-size: 0.9rem; }
+        .hero { background: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.85)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center; color: var(--white); padding: 120px 5%; text-align: center; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.3rem; max-width: 850px; margin: 0 auto 30px; font-weight: 300; }
+        .section { padding: 80px 5%; }
+        .section-title { text-align: center; margin-bottom: 50px; font-size: 2.2rem; color: var(--navy); }
+        .problem-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
+        .card { background: var(--light-gray); padding: 40px; border-left: 5px solid var(--accent); transition: transform 0.3s; }
+        .card h3 { margin-top: 0; color: var(--navy); font-size: 1.5rem; }
+        .uncommon-approach { background: var(--navy); color: var(--white) !important; border-radius: 8px; padding: 45px; margin-top: 40px; }
+        .uncommon-approach h3 { color: var(--white); border-bottom: 1px solid var(--accent); padding-bottom: 10px; margin-bottom: 20px; }
+        .uncommon-approach ul { list-style: none; padding: 0; }
+        .uncommon-approach li { margin-bottom: 15px; padding-left: 25px; position: relative; color: var(--white); }
+        .uncommon-approach li::before { content: "→"; position: absolute; left: 0; color: var(--accent); font-weight: bold; }
+        .cta-box { text-align: center; background: var(--light-gray); padding: 80px 5%; }
+        .btn { background: var(--accent); color: white !important; padding: 18px 35px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin-top: 25px; }
+        footer { background: #0a0a0a; color: #777; text-align: center; padding: 30px; font-size: 0.9rem; }
     </style>
 </head>
-<body class="bg-gradient-ai text-slate-200 min-h-screen">
+<body>
 
-    <nav class="p-6 border-b border-neon">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <div class="text-2xl font-extrabold tracking-tighter italic">PIVOTIST <span class="text-neon-blue">LLC</span></div>
-            <a href="mailto:dwilson@pivotistconsulting.com" class="bg-sky-500 hover:bg-sky-400 text-white px-6 py-2 rounded-full font-semibold transition text-sm">
-                Work with Darryl
-            </a>
-        </div>
+<header>
+    <div class="logo">REAL CHANGEWORK</div>
+    <nav>
+        <a href="#problems">Business Challenges</a>
+        <a href="#approach">The Approach</a>
+        <a href="#contact">Contact</a>
     </nav>
+</header>
 
-    <header class="max-w-6xl mx-auto px-6 py-24 text-center">
-        <h1 class="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight text-white">
-            Real Changework <span class="text-neon-blue">AI Executive.</span>
-        </h1>
-        <p class="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto leading-relaxed mb-12">
-            Building cutting-edge capabilities around <span class="text-white">agentic AI</span> to create radical efficiencies in how we achieve goals—both personally and professionally.
-        </p>
-        <div class="flex flex-wrap justify-center gap-4">
-             <span class="px-4 py-1 rounded-full border border-neon text-xs text-sky-300">PhD Organizational Psych</span>
-             <span class="px-4 py-1 rounded-full border border-neon text-xs text-sky-300">Certified AI Governance (AIGP)</span>
-             <span class="px-4 py-1 rounded-full border border-neon text-xs text-sky-300">Change Management Practitioner</span>
-             <span class="px-4 py-1 rounded-full border border-neon text-xs text-sky-300">CSCP & CTSC Certified</span>
+<section class="hero">
+    <h1>Real Changework Starts Here</h1>
+    <p>We deliver on the initiatives that define your organization’s future. No fluff. No buzzwords. Just the practical discipline required to bridge the gap between strategy and execution.</p>
+    <a href="#contact" class="btn">Schedule a Discovery Call</a>
+</section>
+
+<section class="section" id="problems">
+    <h2 class="section-title">Solving Critical Organizational Friction</h2>
+    <div class="problem-grid">
+        <div class="card">
+            <h3>Execution Gridlock</h3>
+            <p>Your leadership team has a vision, but historically, the execution has stalled. We move beyond "talking change" to establishing the alignment and commitment necessary for new ways of working.</p>
         </div>
-    </header>
-
-    <section class="max-w-4xl mx-auto px-6 pb-24">
-        <div class="glass-card p-10 rounded-3xl border border-neon relative overflow-hidden">
-            <div class="absolute -top-10 -right-10 w-40 h-40 bg-sky-500/10 blur-3xl rounded-full"></div>
-            <h2 class="text-3xl font-bold mb-6 text-white">Innovating Personal & Professional Systems</h2>
-            <p class="text-lg leading-relaxed text-slate-300 mb-8 italic">
-                "This site serves as the living development lab for leveraging artificial intelligence to build executive systems that act as an extension of the individual, streamlining complex workflows and governance."
-            </p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
-                <div>
-                    <h3 class="font-bold text-sky-400 uppercase tracking-widest mb-2">Capabilities</h3>
-                    <ul class="space-y-2">
-                        <li>• Agentic AI Architecture</li>
-                        <li>• Efficiency Optimization</li>
-                        <li>• Change Leadership</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-bold text-sky-400 uppercase tracking-widest mb-2">Future State</h3>
-                    <ul class="space-y-2">
-                        <li>• Executive Presence Augmentation</li>
-                        <li>• AI Governance Frameworks</li>
-                        <li>• Intelligent Workflow Systems</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="card">
+            <h3>High-Stakes Transitions</h3>
+            <p>From complex business decoupling and spinoffs to overseeing $30M capital projects, we handle the high-pressure initiatives that require veteran general management experience.</p>
         </div>
-    </section>
+        <div class="card">
+            <h3>Scale & Capability Gaps</h3>
+            <p>When an initiative demands experience your organization doesn't yet have—like AI governance or supply chain transformation—we build the structure and cadences to deliver results.</p>
+        </div>
+    </div>
+</section>
 
-    <footer class="text-center py-10 border-t border-neon/20">
-        <p class="text-slate-500 text-xs tracking-widest">
-            © 2026 PIVOTIST LLC | DEVELOPED BY DARRYL WILSON, PhD
+<section class="section" style="background: white;" id="approach">
+    <h2 class="section-title">The "Straight Talk" Advantage</h2>
+    <div style="max-width: 950px; margin: 0 auto;">
+        <p>Real Changework isn't a traditional consultancy where an outside resource "figures it out" for you. Instead, we partner with CEOs and executive teams who are ready to actively sponsor and drive the group process required for true transformation.</p>
+        
+        <div class="uncommon-approach">
+            <h3>Our Uncommon Stack</h3>
+            <ul>
+                <li><strong>Practical Strategy Execution:</strong> Structuring projects that deliver measurable business value.</li>
+                <li><strong>Change Management:</strong> Reframing "embracing change" into measurable alignment and behavioral shifts.</li>
+                <li><strong>Organizational Effectiveness:</strong> Designing the cadences and capabilities your leadership team needs to operate at scale.</li>
+                <li><strong>Domain Expertise:</strong> Practical experience in AI Governance, Supply Chain Management, and Capital Project delivery.</li>
+            </ul>
+        </div>
+        <p style="margin-top: 35px; font-style: italic; text-align: center; color: var(--navy); font-weight: bold;">
+            "We aren't here for the fancy models. We are here for the disciplined techniques that resonate with the reality of your business."
         </p>
-    </footer>
+    </div>
+</section>
+
+<section class="cta-box" id="contact">
+    <h2>Ready to bridge the gap?</h2>
+    <p>If these challenges resonate with your current situation, let’s have a conversation to see if our approach is the right fit for your organization.</p>
+    <a href="mailto:inquiry@realchangework.com" class="btn">Schedule a Discovery Call</a>
+</section>
+
+<footer>
+    &copy; 2026 Real Changework. All rights reserved. <br> 
+    Strategy Execution | Organizational Effectiveness | Leadership Alignment
+</footer>
 
 </body>
 </html>
